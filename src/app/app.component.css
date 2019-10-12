@@ -5,6 +5,7 @@
   text-align: center;
   border: 1px solid #d3d3d3;
   width: auto;
+  top: 55px;
 }
 
 #mydivheader {
@@ -23,9 +24,19 @@
 
 .pp {
   float: left;
+  min-width: 50px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: 0.5px solid #424242;
 }
 
 .ppk {
   float: left;
   margin-right: 15px;
+}
+
+.pptype {
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
 }

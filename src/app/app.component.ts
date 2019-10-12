@@ -15,9 +15,9 @@ export class AppComponent implements OnInit {
   onMouseDown(event) {
     if (event.id.includes('mydivheader')) {
       this.itemMoviendo = document.getElementById(event.parentNode.id)
+      this.xMouse = window.event["clientX"];
+      this.pos = this.itemMoviendo.offsetLeft + (this.xMouse - this.itemMoviendo.offsetLeft)
     }
-    this.xMouse = window.event["clientX"];
-    this.pos = this.itemMoviendo.offsetLeft + (this.xMouse - this.itemMoviendo.offsetLeft)
   }
 
   @HostListener('document:mousemove', ['$event'])
