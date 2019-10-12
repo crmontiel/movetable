@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   xMouse = 0
   w
   pos
+  td = "PRUEBA DE DATA"
   @HostListener('mousedown', ['$event.target'])
   onMouseDown(event) {
     if (event.id.includes('mydivheader')) {
@@ -40,7 +41,6 @@ export class AppComponent implements OnInit {
     document.onmousemove = null;
 
   }
-
 
   constructor() {
 

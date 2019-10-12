@@ -3,9 +3,10 @@
   <div id="mydivheader">Click here to move</div>
   <div class="nn">
     <div class="ppk">key</div>
-    <div class="pp" contenteditable="true"> Prueba de data</div>
+    <div class="pp" contenteditable="true" [textContent]="td" (input)="td=$event.target.textContent"></div>
     <div class="pptype">varchar</div>
 
   </div>
 
 </div>
+<button (click)="ver()">ver data</button>
