@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GIdPipe } from './Pipes/g-id.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GIdPipe
   ],
   imports: [
     BrowserModule,

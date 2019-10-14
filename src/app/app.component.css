@@ -1,4 +1,10 @@
-#mydiv {
+#canvas {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+}
+
+.tableDb {
   position: absolute;
   z-index: 9;
   background-color: #f1f1f1;
@@ -6,17 +12,15 @@
   border: 1px solid #d3d3d3;
   width: auto;
   top: 55px;
-}
-
-#mydiv1 {
-  position: absolute;
-  z-index: 9;
-  background-color: #f1f1f1;
-  text-align: center;
-  border: 1px solid #d3d3d3;
-  width: auto;
-  top: 95px;
-  left: 900px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #mydivheader {
@@ -33,6 +37,23 @@
   padding-right: 5px;
   float: left;
   margin-top: 2px;
+  height: 24px;
+}
+
+.bgsvg {
+  width: 100% !important;
+  height: 100% !important;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.imgk {
+  margin-top: 4px;
+}
+
+.addzIndex {
+  z-index: 999 !important;
 }
 
 .pp {
@@ -40,10 +61,11 @@
   min-width: 50px;
   padding-left: 5px;
   padding-right: 5px;
-  border: 0.5px solid #42424242;
   margin-top: 2px;
   margin-bottom: 2px;
   margin-left: 30px;
+  text-align: left !important;
+  /* border: 0.2px solid #42424242; */
 }
 
 .ppk {
@@ -54,7 +76,13 @@
 }
 
 .pptype {
-  float: left;
-  margin-left: 5px;
-  margin-right: 5px;
+  float: right !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  margin-left: 10px !important;
+  text-align: left !important;
+}
+
+.hfk {
+  height: 10px !important;
 }
