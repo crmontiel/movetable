@@ -82,7 +82,9 @@ export class AppComponent implements OnInit {
   onMouseUp(event) {
 
     let div = document.getElementById(event.parentNode.id)
-    div.classList.remove('addzIndex')
+    try {
+      div.classList.remove('addzIndex')
+    } catch (e) { }
 
     this.idMoviendo = 'undefined'
     document.onmouseup = null;
