@@ -8,6 +8,17 @@
   top: 55px;
 }
 
+#mydiv1 {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  width: auto;
+  top: 95px;
+  left: 900px;
+}
+
 #mydivheader {
   padding: 10px;
   cursor: move;
@@ -17,9 +28,11 @@
 }
 
 .nn {
-  backgroud: #424242;
   padding-left: 5px;
+  width: -webkit-fill-available;
   padding-right: 5px;
+  float: left;
+  margin-top: 2px;
 }
 
 .pp {
@@ -30,11 +43,14 @@
   border: 0.5px solid #42424242;
   margin-top: 2px;
   margin-bottom: 2px;
+  margin-left: 30px;
 }
 
 .ppk {
+  position: absolute !important;
   float: left;
   margin-right: 15px;
+  min-width: 25px !important;
 }
 
 .pptype {
