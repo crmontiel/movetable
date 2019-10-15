@@ -1,0 +1,39 @@
+<app-toolbar></app-toolbar>
+
+<div id="canvas" style="width: 100% !important;height: 100% !important;">
+
+  <div class="tableDb" *ngFor="let t of data;let idx=index" [ngStyle]="t.style" [attr.id]="'idTab'+ t.titulo + idx | gId" (dblclick)="log()">
+    <div id="mydivheader" [attr.data-id]="idx">{{t.titulo}}</div>
+    <!-------------- -->
+    <div *ngFor="let item of t.camps; let ifk=index" class="hfk">
+      <!------>
+      <div class="nn" [attr.id]="'fk'+ idx + item.nombre + ifk | gId">
+        <div class="ppk">
+          <img src="/assets/icons/key.png" class="imgk" *ngIf="item.pk==true">
+          <img src="/assets/icons/rhombus.png" class="imgk" *ngIf="item.pk==false">
+        </div>
+        <div class="pp" contenteditable="false" [textContent]="item.nombre" (input)="item.nombre=$event.target.textContent"></div>
+        <div class="pptype">{{item.type}}</div>
+      </div>
+      <!------>
+      <br>
+    </div>
+    <!-------------- -->
+
+
+  </div>
+
+
+  <svg class="bgsvg" id="poligonos">
+    <!-- <line x1="390" x2="450" y1="150" y2="150" stroke="black" />
+    <line x1="450" x2="450" y1="150" y2="255" stroke="black" />
+    <line x1="450" x2="900" y1="255" y2="255" stroke="black" />-->
+    <polyline id="ft" style="fill:none;stroke:black;stroke-width:1" *ngFor="let une of fks" [attr.points]="une.px" />
+    <!-- <rect [x]="" y="252.5" width="3" height="6" *ngFor="let une of fks" /> -->
+
+  </svg>
+
+
+
+  <!-- <button (click)="ver()">ver data</button> -->
+</div>

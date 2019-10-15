@@ -1,0 +1,90 @@
+#canvas {
+  z-index: 99;
+  position: absolute;
+  /* background: transparent !important; */
+  background: url('/assets/bgvector.png') !important;
+  /* background-repeat: repeat-x repeat-y !important; */
+}
+
+.tableDb {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  width: auto;
+  top: 55px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.nn {
+  padding-left: 5px;
+  width: -webkit-fill-available;
+  padding-right: 5px;
+  float: left;
+  margin-top: 2px;
+  height: 24px;
+}
+
+.bgsvg {
+  width: 100% !important;
+  height: 100% !important;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.imgk {
+  margin-top: 4px;
+}
+
+.addzIndex {
+  z-index: 999 !important;
+}
+
+.pp {
+  float: left;
+  min-width: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 30px;
+  text-align: left !important;
+  /* border: 0.2px solid #42424242; */
+}
+
+.ppk {
+  position: absolute !important;
+  float: left;
+  margin-right: 15px;
+  min-width: 25px !important;
+}
+
+.pptype {
+  float: right !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  margin-left: 10px !important;
+  text-align: left !important;
+}
+
+.hfk {
+  height: 10px !important;
+}
