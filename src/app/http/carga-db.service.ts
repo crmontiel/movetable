@@ -12,7 +12,7 @@ export class CargaDbService {
     return {
       tablas: [
         {
-          titulo: "Prueba data",
+          titulo: "Tabla 1",
           id: "",
           style: {
             top: '73px',
@@ -30,15 +30,49 @@ export class CargaDbService {
               pk: false,
               nombre: "Descripcion",
               type: "varchar"
+            },
+            {
+              id: "",
+              pk: false,
+              nombre: "id_tabla3",
+              type: "varchar"
             }
           ]
         },
         {
-          titulo: "Prueba 2",
+          titulo: "Tabla 2",
           id: "",
           style: {
-            top: '277px',
-            left: '563px'
+            top: '111px',
+            left: '1114px'
+          },
+          camps: [
+            {
+              id: "",
+              pk: true,
+              nombre: "id",
+              type: "integer"
+            },
+            {
+              id: "",
+              pk: false,
+              nombre: "Descripcion",
+              type: "varchar"
+            },
+            {
+              id: "",
+              pk: false,
+              nombre: "fecha",
+              type: "date"
+            }
+          ]
+        },
+        {
+          titulo: "Tabla 3",
+          id: "",
+          style: {
+            top: '388px',
+            left: '643px'
           },
           camps: [
             {
@@ -66,6 +100,11 @@ export class CargaDbService {
         {
           t1: 'fk0Descripcion1',
           t2: 'fk1id0',
+          px: null
+        },
+        {
+          t1: 'fk0id_tabla32',
+          t2: 'fk2id0',
           px: null
         }
       ]
