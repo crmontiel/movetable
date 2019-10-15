@@ -165,24 +165,37 @@ export class DiagramaComponent implements OnInit {
 
 
 
+      // let largo = Math.sqrt(((tabla2.x - tabla1.x) * (tabla2.x - tabla1.x)) + ((tabla2.y - tabla1.y) * (tabla2.y - tabla1.y)));
       let largo
-      if (tabla1.x > tabla2.x) {
+      let t1Left = false
+      if (tabla1.x > tabla2.x && tabla1.x + tabla1.w > tabla2.x) {
+        console.log("#1")
         largo = await (tabla2.x - (tabla1.x + tabla1.w)) / 2
+        t1Left = true
       } else {
-
+        // t1Left=false
+        console.log(item)
+        console.log("#2")
         largo = await (tabla2.x - (tabla1.x + tabla1.w)) / 2
-
       }
 
-      // let largo = Math.sqrt(((tabla2.x - tabla1.x) * (tabla2.x - tabla1.x)) + ((tabla2.y - tabla1.y) * (tabla2.y - tabla1.y)));
+      let add = 0
+      if (this.between(tabla1.x + tabla1.w, tabla2.x, tabla2.x + tabla2.w)) {
+        console.log("#")
+      }
 
-      item.px = `${tabla1.x + tabla1.w},${tabla1.fk}
-                 ${tabla1.x + tabla1.w + largo},${tabla1.fk}
-                 ${tabla1.x + tabla1.w + largo},${tabla2.fk}
-                 ${tabla2.x},${tabla2.fk}
-                `
+
+      item.px = `${tabla1.x + tabla1.w}, ${tabla1.fk}
+                 ${ tabla1.x + tabla1.w + largo}, ${tabla1.fk}
+                 ${ tabla1.x + tabla1.w + largo}, ${tabla2.fk}
+                 ${ tabla2.x}, ${tabla2.fk}
+        `
     })
   }
+
+
+
+  between(x, min, max) { return x >= min && x <= max; }
 
 
 }

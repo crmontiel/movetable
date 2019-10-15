@@ -15,8 +15,8 @@ export class CargaDbService {
           titulo: "Tabla 1",
           id: "",
           style: {
-            top: '73px',
-            left: '209px'
+            top: '140px',
+            left: '573px'
           },
           camps: [
             {
@@ -97,11 +97,11 @@ export class CargaDbService {
         }
       ],
       fk: [
-        {
-          t1: 'fk0Descripcion1',
-          t2: 'fk1id0',
-          px: null
-        },
+        // {
+        //   t1: 'fk0Descripcion1',
+        //   t2: 'fk1id0',
+        //   px: null
+        // },
         {
           t1: 'fk0id_tabla32',
           t2: 'fk2id0',
