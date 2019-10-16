@@ -1,4 +1,4 @@
-#canvas {
+#containesTables {
   z-index: 99;
   position: absolute;
   /* background: transparent !important; */
@@ -17,10 +17,6 @@
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
-  /*
-    Introduced in IE 10.
-    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-  */
   -ms-user-select: none;
   user-select: none;
 }
