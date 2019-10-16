@@ -198,4 +198,16 @@ export class DiagramaComponent implements OnInit {
   between(x, min, max) { return x >= min && x <= max; }
 
 
+  addRow(i) {
+    this.data[i].camps.push({
+
+      id: "",
+      pk: false,
+      nombre: "",
+      type: ""
+
+    })
+  }
+
+
 }

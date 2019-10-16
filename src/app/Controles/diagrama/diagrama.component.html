@@ -12,11 +12,19 @@
           <img src="/assets/icons/key.png" class="imgk" *ngIf="item.pk==true">
           <img src="/assets/icons/rhombus.png" class="imgk" *ngIf="item.pk==false">
         </div>
-        <div class="pp" contenteditable="false" [textContent]="item.nombre" (input)="item.nombre=$event.target.textContent"></div>
+        <div class="pp" contenteditable="true" [textContent]="item.nombre" (input)="item.nombre=$event.target.textContent"></div>
         <div class="pptype">{{item.type}}</div>
       </div>
       <!------>
       <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="hfk">
+      <div class="nn" (click)="addRow(idx)">
+        add new
+      </div>
     </div>
     <!-------------- -->
 

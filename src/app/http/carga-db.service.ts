@@ -97,11 +97,11 @@ export class CargaDbService {
         }
       ],
       fk: [
-        // {
-        //   t1: 'fk0Descripcion1',
-        //   t2: 'fk1id0',
-        //   px: null
-        // },
+        {
+          t1: 'fk0Descripcion1',
+          t2: 'fk1id0',
+          px: null
+        },
         {
           t1: 'fk0id_tabla32',
           t2: 'fk2id0',
